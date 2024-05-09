@@ -1,0 +1,51 @@
+{
+"location": {
+"name": "New Delhi",
+"region": "Delhi",
+"country": "India",
+"lat": 28.6,
+"lon": 77.2,
+"tz_id": "Asia/Kolkata",
+"localtime_epoch": 1715153136,
+"localtime": "2024-05-08 12:55"
+},
+"current": {
+"last_updated_epoch": 1715152500,
+"last_updated": "2024-05-08 12:45",
+"temp_c": 34,
+"temp_f": 93.2,
+"is_day": 1,
+"condition": {
+"text": "Mist",
+"icon": "//cdn.weatherapi.com/weather/64x64/day/143.png",
+"code": 1030
+},
+"wind_mph": 11.9,
+"wind_kph": 19.1,
+"wind_degree": 80,
+"wind_dir": "E",
+"pressure_mb": 1007,
+"pressure_in": 29.74,
+"precip_mm": 0,
+"precip_in": 0,
+"humidity": 41,
+"cloud": 0,
+"feelslike_c": 32.2,
+"feelslike_f": 89.9,
+"vis_km": 3.5,
+"vis_miles": 2,
+"uv": 9,
+"gust_mph": 16.3,
+"gust_kph": 26.3,
+"air_quality": {
+"co": 620.8,
+"no2": 7.2,
+"o3": 243.2,
+"so2": 21.5,
+"pm2_5": 79.7,
+"pm10": 99.5,
+"us-epa-index": 4,
+"gb-defra-index": 10
+}
+}
+}

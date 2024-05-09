@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: linear-gradient(80deg, #00feba, #5b548a);
+  max-width: 100%;
+  height: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-heading{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* height: 50px; */
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #d3cdff,#d6d1ff9e ,#26c298,#00ffbb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  /* margin-top: 15px; */
+  gap: 10px;
+}
+.heading{
+  background-color: #fff;
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-weight: 600;
+  border: none;
+}
+.search{
+  height: 40px;
+  width: 11%;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  /* width: var(--width-of-input); */
+  width: 70%;
+  /* height: var(--height-of-input); */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.content{
+  height: 60vh;
+  width: 100%;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.image{
+  height: 40%;
+  width: 40%;
+  background-image: url('./images/clear.png');
+  background-position: center;
+  background-size: cover;
+}
+.clouds{
+  height: 40%;
+  width: 40%;
+  background-image: url('./images/clouds.png');
+  background-position: center;
+  background-size: cover;
+}
+.mist{
+  height: 40%;
+  width: 55%;
+  background-image: url('./images/mist.png');
+  background-position: center;
+  background-size: cover;
+}
+.rain{
+  height: 40%;
+  width: 40%;
+  background-image: url('./images/rain.png');
+  background-position: center;
+  background-size: cover;
+}
+.snow{
+  height: 40%;
+  width: 40%;
+  background-image: url('./images/snow.png');
+  background-position: center;
+  background-size: cover;
+}
+.cel{
+  color: #fff;
+  font-size: 70px;
+  font-weight: 800;
+}
+.para{
+  display: inline;
+  font-size: 60px;
+  font-weight: 600
+}
+.city{
+  color: #fff;
+  font-size: 60px;
+  padding-top: 20px;
+  font-family: Work sans;
+  color: rgb(235, 221, 221);
+}
+.footer{
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: black; */
+}
+.humid{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+ /* background-color: black; */
+}
+.humid-img{
+  height: 100%;
+  width: 50%;
+  background-image: url("./images/humidity.png");
+  background-position: center;
+  background-size: contain;
+}
+.p{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(235, 221, 221);
+}
+.wind-img{
+  height: 100%;
+  width: 27%;
+  background-image: url("./images/wind.png");
+  /* background-position: center; */
+  background-size: contain;
+}
+.wind-p{
+  font-size: 23px;
+}
+.card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #00feba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #645d8e;
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "Wind";
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card2:hover:after {
+  content: "Humid";
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card3:hover:after {
+  content: "Air";
+  color: white;
 }
